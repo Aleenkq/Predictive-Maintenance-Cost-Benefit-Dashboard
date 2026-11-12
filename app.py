@@ -58,6 +58,24 @@ st.markdown(
     f"""
     <style>
 
+    /* All Streamlit alert boxes */
+    div[data-testid="stAlert"] {{
+        border-radius: 14px !important;
+        color: #E6F4F1 !important;
+    }}
+
+    div[data-testid="stAlert"] p,
+    div[data-testid="stAlert"] div,
+    div[data-testid="stAlert"] span {{
+        color: #E6F4F1 !important;
+    }}
+
+    /* Success */
+    div[data-testid="stAlert"][data-baseweb="notification"] {{
+        background-color: #0C3B33 !important;
+        border: 1px solid rgba(77, 231, 220, 0.28) !important;
+    }}
+
     /* -----------------------------------------------------
        Main page
     ----------------------------------------------------- */
