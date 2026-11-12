@@ -1,0 +1,2 @@
+planned_maintenance_cost,unplanned_repair_cost,downtime_hours,downtime_cost_per_hour,false_alarm_cost,implementation_cost,prevention_effectiveness
+500.0,3000.0,8.0,400.0,350.0,10000.0,0.8
