@@ -695,52 +695,24 @@ logo_col, hero_col = st.columns(
     vertical_alignment="center"
 )
 
-
 with logo_col:
-
-    try:
-        st.image(
-            "logo.png",
-            use_container_width=True
-        )
-
-    except Exception:
-        st.markdown(
-            "### ⚙️ Predictive Maintenance"
-        )
-
-
-with hero_col:
-
-    st.markdown(
-        f"""
-        <div class="hero-box">
-
-            <div class="hero-title">
-                Predictive Maintenance
-                Cost-Benefit Dashboard
-            </div>
-
-            <div class="hero-subtitle">
-                Interactive evaluation of
-                predictive maintenance performance,
-                operational outcomes, and financial
-                impact in smart manufacturing.
-            </div>
-
-            <span class="model-pill">
-                Selected Model:
-                <b>{selected_model}</b>
-            </span>
-
-        </div>
-        """,
-        unsafe_allow_html=True
+    st.image(
+        "logo.png",
+        use_container_width=True
     )
 
-
-st.markdown("<br>", unsafe_allow_html=True)
-
+with hero_col:
+    st.markdown(
+        f"""<div class="hero-box">
+<div class="hero-title">Predictive Maintenance Cost-Benefit Dashboard</div>
+<div class="hero-subtitle">
+Interactive evaluation of predictive maintenance performance,
+operational outcomes, and financial impact in smart manufacturing.
+</div>
+<span class="model-pill">Selected Model: <b>{selected_model}</b></span>
+</div>""",
+        unsafe_allow_html=True
+    )
 
 # =========================================================
 # PRIMARY FINANCIAL KPI CARDS
@@ -1453,27 +1425,12 @@ with tab5:
 
 st.markdown("---")
 
-
 st.markdown(
-    """
-    <div class="footer-box">
-
-        <div class="footer-title">
-            Predictive Maintenance Cost-Benefit Dashboard
-        </div>
-
-        <div>
-            <b>By:</b>
-            Aleen Aloqili
-            &nbsp; • &nbsp;
-            Ghala Alkahtani
-            &nbsp; • &nbsp;
-            Lama Alsuhaibani
-            &nbsp; • &nbsp;
-            Hala Alhamzah
-        </div>
-
-    </div>
-    """,
+    """<div class="footer-box">
+<div class="footer-title">Predictive Maintenance Cost-Benefit Dashboard</div>
+<div>
+<b>By:</b> Aleen Aloqili • Ghala Alkahtani • Lama Alsuhaibani • Hala Alhamzah
+</div>
+</div>""",
     unsafe_allow_html=True
 )
