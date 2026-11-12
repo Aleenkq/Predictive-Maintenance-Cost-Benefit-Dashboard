@@ -58,8 +58,13 @@ st.markdown(
     f"""
     <style>
 
-    /* All Streamlit alert boxes */
+    /* -----------------------------------------------------
+       All Streamlit alert boxes
+    ----------------------------------------------------- */
+
     div[data-testid="stAlert"] {{
+        background-color: #0C3B33 !important;
+        border: 1px solid rgba(77, 231, 220, 0.28) !important;
         border-radius: 14px !important;
         color: #E6F4F1 !important;
     }}
@@ -70,11 +75,11 @@ st.markdown(
         color: #E6F4F1 !important;
     }}
 
-    /* Success */
-    div[data-testid="stAlert"][data-baseweb="notification"] {{
-        background-color: #0C3B33 !important;
-        border: 1px solid rgba(77, 231, 220, 0.28) !important;
+    div[data-testid="stAlert"] svg {{
+        color: #4DE7DC !important;
+        fill: #4DE7DC !important;
     }}
+
 
     /* -----------------------------------------------------
        Main page
@@ -731,6 +736,7 @@ operational outcomes, and financial impact in smart manufacturing.
 </div>""",
         unsafe_allow_html=True
     )
+
 
 # =========================================================
 # PRIMARY FINANCIAL KPI CARDS
@@ -1442,6 +1448,7 @@ with tab5:
 # =========================================================
 
 st.markdown("---")
+
 
 st.markdown(
     """<div class="footer-box">
