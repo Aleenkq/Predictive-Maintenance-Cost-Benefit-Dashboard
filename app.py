@@ -81,6 +81,27 @@ st.markdown(
     }}
 
 
+    /* Force alert colors in both Streamlit light and dark themes */
+    .stApp div[data-testid="stAlert"],
+    .stApp div[data-testid="stAlertContainer"] {{
+        background: #0C3B33 !important;
+        background-color: #0C3B33 !important;
+        border-color: rgba(77, 231, 220, 0.28) !important;
+        color: #E6F4F1 !important;
+    }}
+
+    .stApp div[data-testid="stAlert"] *,
+    .stApp div[data-testid="stAlertContainer"] * {{
+        color: #E6F4F1 !important;
+        -webkit-text-fill-color: #E6F4F1 !important;
+    }}
+
+    .stApp div[data-testid="stAlert"] svg,
+    .stApp div[data-testid="stAlertContainer"] svg {{
+        color: #4DE7DC !important;
+        fill: #4DE7DC !important;
+    }}
+
     /* -----------------------------------------------------
        Main page
     ----------------------------------------------------- */
@@ -871,6 +892,8 @@ with tab1:
         )
 
 
+        fig_strategy.update_layout(title_font=dict(color="#FFFFFF"))
+
         st.plotly_chart(
             fig_strategy,
             use_container_width=True
@@ -1015,6 +1038,8 @@ with tab2:
     )
 
 
+    fig_metric.update_layout(title_font=dict(color="#FFFFFF"))
+
     st.plotly_chart(
         fig_metric,
         use_container_width=True
@@ -1130,6 +1155,8 @@ with tab3:
         height=470
     )
 
+
+    fig_breakdown.update_layout(title_font=dict(color="#FFFFFF"))
 
     st.plotly_chart(
         fig_breakdown,
@@ -1278,6 +1305,8 @@ with tab4:
         )
 
 
+        fig_net_benefit.update_layout(title_font=dict(color="#FFFFFF"))
+
         st.plotly_chart(
             fig_net_benefit,
             use_container_width=True
@@ -1313,6 +1342,8 @@ with tab4:
             height=420
         )
 
+
+        fig_predictive_cost.update_layout(title_font=dict(color="#FFFFFF"))
 
         st.plotly_chart(
             fig_predictive_cost,
